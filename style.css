@@ -1,0 +1,233 @@
+/* sidebar pannel Design */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 345px;
+    border-radius: 1.2rem;
+    margin-right: 0.6rem;
+}
+.main{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1.2rem;
+    overflow: auto;
+    padding: 0 1.6rem 0 1.6rem;
+
+}
+.footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1.1rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 102px;
+    padding: 0.6rem 0.8rem;
+}
+.navoption{
+    line-height: 2.6rem;
+    opacity: 0.6;
+    padding: 0.5rem 0.78rem;
+}
+.navoption:hover{
+    opacity: 0.8;
+}
+.navoption i{
+    font-size: 1.24rem;
+}
+.navoption a{
+    font-size: 1rem;
+    margin-left: 1.1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1.1rem;
+    height: 100%;
+    margin-top: 0.4rem;
+    padding: 0.5rem 0.78rem;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.library img{
+    height: 1.24rem;
+    width: 1.24rem;
+}
+.icon{
+    font-size: 1.3rem;
+    display: flex;
+}
+.icon i{
+    opacity: 0.6;
+    margin-right: 1rem;
+}
+.icon i:hover{
+    opacity: 0.9;
+}
+.box{
+    height: 8.2rem;
+    background-color: #232323;
+    border-radius: 0.7rem;
+    margin: 0.74rem 0 1.72rem 0;
+    padding: 0.8rem 1rem;
+}
+.boxp1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.boxp2{
+    font-size: 0.87rem;
+    opacity: 0.85;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 98px;
+    padding: 0.25rem 0.8rem;
+    font-weight: 750;
+    margin-top: 0.5rem;
+    height: 1.9rem;
+    width: fit-content;
+}
+
+/* Main section pannel Design */
+
+.stickynav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.stickyicon{
+    margin-left: 0.78rem;
+}
+.dark-badge{
+    background-color: #000;
+    color: white;
+}
+.stickyoption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stickyoption button{
+    margin-right: 0.9rem;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 160px;
+    border-radius: 0.6rem;
+    padding: 0.9rem;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardimg{
+    width: 100%;
+    border-radius: 0.9rem;
+
+}
+.cardtitle{
+    font-weight: 610;
+}
+.cardinfo{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.horline{
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 48%;
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.albums{
+    width: 25%;
+    background-color: aqua;
+}
+.player{
+    width: 50%;
+}
+.control{
+    width: 25%;
+    background-color: yellow;
+}
+.controlicon{
+    height: 1rem;
+    margin-right: 1.73rem;
+    opacity: 0.6;
+}
+.controlicon:hover{
+    opacity: 1;
+}
+#icon{
+    opacity: 1;
+    height: 2rem;
+}
+.playercontrol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playbackbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar{
+    width: 72%;
+    appearance: none;
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 0.13rem;
+    cursor: pointer;
+}
